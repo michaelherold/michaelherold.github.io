@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://michaelherold.github.io/sitemap.xml 
+Sitemap: http://mherold.org/sitemap.xml 

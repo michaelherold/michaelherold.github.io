@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Michael Herold]]></title>
-  <link href="http://michaelherold.github.io/atom.xml" rel="self"/>
-  <link href="http://michaelherold.github.io/"/>
-  <updated>2013-11-04T16:46:28-05:00</updated>
-  <id>http://michaelherold.github.io/</id>
+  <link href="http://mherold.org/atom.xml" rel="self"/>
+  <link href="http://mherold.org/"/>
+  <updated>2013-11-04T16:51:22-05:00</updated>
+  <id>http://mherold.org/</id>
   <author>
     <name><![CDATA[Michael Herold]]></name>
     <email><![CDATA[michael@mherold.org]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Welcome to my new blog!]]></title>
-    <link href="http://michaelherold.github.io/blog/2013/11/04/welcome-to-my-new-blog/"/>
+    <link href="http://mherold.org/blog/2013/11/04/welcome-to-my-new-blog/"/>
     <updated>2013-11-04T16:02:00-05:00</updated>
-    <id>http://michaelherold.github.io/blog/2013/11/04/welcome-to-my-new-blog</id>
+    <id>http://mherold.org/blog/2013/11/04/welcome-to-my-new-blog</id>
     <content type="html"><![CDATA[<p>Blogging has been something of a neglected hobby of mine for many years.
 I have started several blogs that never progressed past a few posts.
 Eventually, I scuttled each one, vowing to relaunch with a passion. This
