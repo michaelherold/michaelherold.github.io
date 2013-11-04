@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Michael Herold]]></title>
+  <link href="http://michaelherold.github.io/atom.xml" rel="self"/>
+  <link href="http://michaelherold.github.io/"/>
+  <updated>2013-11-04T16:37:30-05:00</updated>
+  <id>http://michaelherold.github.io/</id>
+  <author>
+    <name><![CDATA[Michael Herold]]></name>
+    <email><![CDATA[michael@mherold.org]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome to my new blog!]]></title>
+    <link href="http://michaelherold.github.io/blog/2013/11/04/welcome-to-my-new-blog/"/>
+    <updated>2013-11-04T16:02:00-05:00</updated>
+    <id>http://michaelherold.github.io/blog/2013/11/04/welcome-to-my-new-blog</id>
+    <content type="html"><![CDATA[<p>Blogging has been something of a neglected hobby of mine for many years.
+I have started several blogs that never progressed past a few posts.
+Eventually, I scuttled each one, vowing to relaunch with a passion. This
+is my latest attempt at a blog, without including any of my earlier
+writings.</p>
+
+<p>I struggled with the topic of this blog, as I have many interests that do
+not have overlapping audiences. Because my life primarily revolves around
+my work at the moment, I have decided to write about <strong>software
+craftsmanship</strong>, with posts broken into a few separate categories:</p>
+
+<ol>
+<li><strong>Tutorials and informational posts.</strong> I have learned a lot about the
+systems that I use every day by reading tutorials written on blogs. I
+want to give back to that community by writing similar articles. I am
+working mostly with Ruby (and Rails), so gems that I find useful will
+be the initial focus of this category.</li>
+<li><strong>Professional development.</strong> I am someone who really enjoys learning
+different things that help me to better myself. Through the lens of
+software craftsmanship, I will write posts about continuous education,
+team dynamics, leadership, and productivity, and how you can improve
+your skills and be the best software craftsman you can.</li>
+<li><strong>Philosophy.</strong> I find that software craftsmanship has a lot of
+inherent philosophy; whether it&rsquo;s the intricacies of open sourcing
+your code, different software methodologies, or the ethics of writing
+software, software craftsmen need to be aware of the ramifications of
+their work and how the world views it.</li>
+</ol>
+
+
+<p>I plan to write periodically, though I haven&rsquo;t yet decided on an update
+interval. Ideally, it will be three times per week, but as my time shifts
+this will likely waver, as it is not my primary project. I will work on
+the format for the blog as well, perhaps open sourcing the code behind it
+at some point with information on how to use it for your own platform.</p>
+
+<p>Please offer me feedback by commenting on the posts. I want to hear
+your thoughts on my writing, what you find useful, what isn&rsquo;t useful, and
+where I go astray. I&rsquo;m looking forward to hearing your opinions, whether
+they align with my own or differ significantly.</p>
+]]></content>
+  </entry>
+  
+</feed>
