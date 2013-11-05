@@ -4,7 +4,7 @@
   <title><![CDATA[Michael Herold]]></title>
   <link href="http://mherold.org/atom.xml" rel="self"/>
   <link href="http://mherold.org/"/>
-  <updated>2013-11-04T17:36:00-05:00</updated>
+  <updated>2013-11-04T20:06:16-05:00</updated>
   <id>http://mherold.org/</id>
   <author>
     <name><![CDATA[Michael Herold]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Welcome to my new blog!]]></title>
-    <link href="http://mherold.org/blog/2013/11/04/welcome-to-my-new-blog/"/>
+    <link href="http://mherold.org/2013/11/04/welcome-to-my-new-blog/"/>
     <updated>2013-11-04T16:02:00-05:00</updated>
-    <id>http://mherold.org/blog/2013/11/04/welcome-to-my-new-blog</id>
+    <id>http://mherold.org/2013/11/04/welcome-to-my-new-blog</id>
     <content type="html"><![CDATA[<p>Blogging has been something of a neglected hobby of mine for many years.
 I have started several blogs that never progressed past a few posts.
 Eventually, I scuttled each one, vowing to relaunch with a passion. This

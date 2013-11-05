@@ -1,15 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://mherold.org/blog/2013/11/04/welcome-to-my-new-blog/</loc>
+        <loc>http://mherold.org/2013/11/04/welcome-to-my-new-blog/</loc>
         <lastmod>2013-11-04T16:30:07-05:00</lastmod>
     </url>
     <url>
-        <loc>http://mherold.org/blog/archives/</loc>
-        <lastmod>2013-11-04T16:30:07-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mherold.org/blog/</loc>
+        <loc>http://mherold.org/archives/</loc>
         <lastmod>2013-11-04T16:30:07-05:00</lastmod>
     </url>
     <url>
