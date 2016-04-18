@@ -18,29 +18,36 @@
         <h1>{{ site.title }}</h1>
       </a>
       <aside>
-        <nav role="navigation">
-          <div class="navigation-pages">
+        <nav class="site-navigation" role="navigation">
+          <ul class="site-navigation-pages">
             {% for page in site.pages %}
               {% if page.title %}
-                <a class="navigation-pages-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                <li class="site-navigation-pages-item"><a class="site-navigation-pages-item-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
               {% endif %}
             {% endfor %}
-          </div>
-          <div class="navigation-social">
-            <a class="navigation-social-link icon-feed" href="/feed.xml">{{ site.title }} RSS Feed</a>
+          </ul>
+          <ul class="site-navigation-social">
             {% for social in site.social %}
-              <a class="navigation-social-link icon-{{ social[0] }}" href="{{ social[1].url }}">
-                {{ social[1].username }} on {{ social[0] | capitalize }}
-              </a>
+              <li class="site-navigation-social-item">
+                <a class="site-navigation-social-item-link" href="{{ social[1].url }}">
+                  <svg class="icon"><use xlink:href="#icon-{{ social[0] }}" /></svg>
+                    <span class="site-navigation-social-item-link-text">{{ social[1].username }} on {{ social[0] | capitalize }}</span>
+                </a>
+              </li>
             {% endfor %}
-          </div>
+            <li class="site-navigation-social-item">
+              <a class="site-navigation-social-item-link icon-feed" href="/feed.xml">
+                <svg class="icon"><use xlink:href="#icon-feed" /></svg>
+                <span class="site-navigation-social-item-link-text">{{ site.title }} RSS Feed</span>
+              </a>
+            </li>
+          </ul>
         </nav>
       </aside>
     </header>
     <main class="site-content">
       {{ content }}
+      {% include icons.html %}
     </main>
-    <footer class="site-footer">
-    </footer>
   </body>
 </html>

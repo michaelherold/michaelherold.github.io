@@ -1,0 +1,19 @@
+{
+  "name": "michaeljherold.com",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Michael Herold",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.0.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-svgstore": "^6.0.0"
+  },
+  "scripts": {
+    "gulp": "node_modules/.bin/gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
