@@ -189,7 +189,7 @@ gulp.task('serve', () => {
     server: ['.tmp', 'dist']
   });
 
-  gulp.watch(['src/**/*.md', 'src/**/*.html', 'src/**/*.yml'], gulp.series('jekyll', reload));
+  gulp.watch(['src/**/*.md', 'src/**/*.html', '**/*.yml'], gulp.series('jekyll', reload));
   gulp.watch(['src/**/*.xml', 'src/**/*.txt'], gulp.series('jekyll'));
   gulp.watch('src/assets/javascript/**/*.js', gulp.series('scripts'));
   gulp.watch('src/assets/scss/**/*.scss', gulp.series('styles'));
