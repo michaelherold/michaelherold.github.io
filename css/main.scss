@@ -3,3 +3,25 @@
 ---
 
 @charset "utf-8";
+
+@import "normalize";
+@import "config";
+
+body {
+  display: flex;
+  flex-flow: column;
+
+  @media (min-width: $two-column-width) {
+    flex-flow: row-reverse nowrap;
+  }
+}
+
+.site-content {
+  flex-grow: 1;
+}
+
+.site-header {
+  @media (min-width: $two-column-width) {
+    flex-basis: $sidebar-width;
+  }
+}
