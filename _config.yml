@@ -7,6 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: ""
 url: "https://michaeljherold.com"
+logo: ""
 
 source: "src"
 destination: "dist"
@@ -17,13 +18,34 @@ future: true
 show_drafts: true
 limit_posts: 10
 
+author:
+  bio: "This is my bio"
+  email: "michael@michaeljherold.com"
+  github: "michaelherold"
+  name: "Michael Herold"
+  twitter: "mherold"
+  uri: "https://michaeljherold.com"
+
+github: &github
+  url: "https://github.com/michaelherold"
+  username: "michaelherold"
+
+twitter: &twitter
+  url: "https://twitter.com/mherold"
+  username: "mherold"
+
 social:
-  github:
-    url: "https://github.com/michaelherold"
-    username: "michaelherold"
-  twitter:
-    url: "https://twitter.com/mherold"
-    username: "@mherold"
+  name: "Michael Herold"
+  links:
+    - "https://github.com/michaelherold"
+    - "https://plus.google.com/u/0/103923072862453006975"
+    - "https://twitter.com/mherold"
+    - "https://www.facebook.com/michael.j.herold"
+    - "https://www.linkedin.com/in/michaeljherold"
+
+social_links:
+  github: *github
+  twitter: *twitter
 
 markdown: "redcarpet"
 redcarpet:
