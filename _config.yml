@@ -60,6 +60,7 @@ redcarpet:
     - "superscript"
     - "tables"
     - "underline"
+highlighter: "rouge"
 
 gems:
   - "jekyll-archives"
