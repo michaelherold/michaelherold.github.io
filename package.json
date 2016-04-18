@@ -40,6 +40,7 @@
     "shelljs": "^0.6.0",
     "yargs": "^4.6.0"
   },
+  "private": true,
   "scripts": {
     "check": "node_modules/.bin/gulp check",
     "deploy": "node_modules/.bin/gulp deploy",
