@@ -194,6 +194,7 @@ gulp.task('serve', () => {
   gulp.watch('src/assets/javascript/**/*.js', gulp.series('scripts'));
   gulp.watch('src/assets/scss/**/*.scss', gulp.series('styles'));
   gulp.watch('src/assets/images/**/*', reload);
+  gulp.watch('src/_icons/**/*.svg', gulp.series('inject:svgs'));
 });
 
 gulp.task('styles', () =>
@@ -238,13 +239,13 @@ gulp.task('assets', gulp.series(
 
 gulp.task('build', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
-  gulp.series('assets', 'inject:head', 'inject:footer'),
+  gulp.series('assets', 'inject:head', 'inject:footer', 'inject:svgs'),
   gulp.series('jekyll', 'assets:copy', 'html')
 ));
 
 gulp.task('default', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
-  gulp.series('assets', 'inject:head', 'inject:footer'),
+  gulp.series('assets', 'inject:head', 'inject:footer', 'inject:svgs'),
   gulp.series('jekyll', 'assets:copy', 'html'),
   gulp.series('serve')
 ));
