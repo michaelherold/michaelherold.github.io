@@ -8,8 +8,14 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "https://michaeljherold.com"
 
+source: "src"
+destination: "dist"
 exclude:
-  - "node_modules"
+  - "assets"
+
+future: true
+show_drafts: true
+limit_posts: 10
 
 social:
   github:
@@ -19,4 +25,40 @@ social:
     url: "https://twitter.com/mherold"
     username: "@mherold"
 
-markdown: kramdown
+markdown: "redcarpet"
+redcarpet:
+  extensions:
+    - "autolink"
+    - "fenced_code_blocks"
+    - "footnotes"
+    - "highlight"
+    - "no_intra_emphasis"
+    - "smart"
+    - "strikethrough"
+    - "superscript"
+    - "tables"
+    - "underline"
+
+gems:
+  - "jekyll-archives"
+  - "jekyll-feed"
+  - "jekyll-paginate"
+  - "jekyll-sitemap"
+  - "jekyll-seo-tag"
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - categories
+    - tags
+  layouts:
+    year: "year-archive"
+    month: "month-archive"
+    category: "category-archive"
+    tag: "tag-archive"
+  permalinks:
+    year: "/archive/:year/"
+    month: "/archive/:year/:month/"
+    category: "/category/:name/"
+    tags: "/tag/:name/"
