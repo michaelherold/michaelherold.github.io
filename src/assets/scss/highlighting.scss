@@ -1,275 +1,426 @@
-/*
-    Name:       Base16 Railscasts Dark
-    Author:     Ryan Bates (http://railscasts.com)
-    Pygments template by Jan T. Sott (https://github.com/idleberg)
-    Created with Base16 Builder by Chris Kempson (https://github.com/chriskempson/base16-builder)
-*/
+$base00: #2b2b2b;
+$base01: #272935;
+$base02: #3a4055;
+$base03: #5a647e;
+$base04: #d4cfc9;
+$base05: #e6e1dc;
+$base06: #f4f1ed;
+$base07: #f9f7f3;
+$base08: #da4939;
+$base09: #cc7833;
+$base0a: #ffc66d;
+$base0b: #a5c261;
+$base0c: #519f50;
+$base0d: #6d9cbe;
+$base0e: #b5b3eb;
+$base0f: #bc9458;
+
+$color-bg: $base00;
+$color-fg: $base07;
+
+$color-class: $base0a;
+$color-comment: $base03;
+$color-error: $base08;
+$color-function: $base0d;
+$color-keyword: $base0e;
+$color-literal: $base09;
+$color-number: $base09;
+$color-string: $base0b;
+$color-variable: $base08;
+
+@mixin comment {
+  color: $color-comment;
+}
+
+@mixin keyword {
+  color: $color-keyword;
+}
+
+@mixin number {
+  color: $color-number;
+}
+
+@mixin string {
+  color: $color-string;
+}
 
 .highlight  {
-   background: #2b2b2b;
-   color: #f9f7f3;
-}
-
-.highlight .bp {
-   color: #f9f7f3;
-}
-
-.highlight .c {
-   color: #5a647e;
-}
-
-.highlight .c1 {
-   color: #5a647e;
-}
-
-.highlight .cm {
-   color: #5a647e;
-}
-
-.highlight .cp {
-   color: #5a647e;
-}
-
-.highlight .cs {
-   color: #5a647e;
-}
-
-.highlight .err {
-   color: #da4939;
-}
-
-.highlight .gd {
-   color: #da4939;
-}
-
-.highlight .ge {
-   font-style: italic;
-}
-
-.highlight .gh {
-   color: #f9f7f3;
-   font-weight: bold;
-}
-
-.highlight .gi {
-   color: #a5c261;
-}
-
-.highlight .gp {
-   color: #5a647e;
-   font-weight: bold;
-}
-
-.highlight .gs {
-   font-weight: bold;
-}
-
-.highlight .gu {
-   color: #519f50;
-   font-weight: bold;
-}
-
-.highlight .hll {
-   background-color: #3a4055;
-}
-
-.highlight .il {
-   color: #cc7833;
-}
-
-.highlight .k {
-   color: #b6b3eb;
-}
-
-.highlight .kc {
-   color: #b6b3eb;
-}
-
-.highlight .kd {
-   color: #b6b3eb;
-}
-
-.highlight .kn {
-   color: #519f50;
-}
-
-.highlight .kp {
-   color: #b6b3eb;
-}
-
-.highlight .kr {
-   color: #b6b3eb;
-}
-
-.highlight .kt {
-   color: #ffc66d;
-}
-
-.highlight .l {
-   color: #cc7833;
-}
-
-.highlight .ld {
-   color: #a5c261;
-}
-
-.highlight .m {
-   color: #cc7833;
-}
-
-.highlight .mf {
-   color: #cc7833;
-}
-
-.highlight .mh {
-   color: #cc7833;
-}
-
-.highlight .mi {
-   color: #cc7833;
-}
-
-.highlight .mo {
-   color: #cc7833;
-}
-
-.highlight .n {
-   color: #f9f7f3;
-}
-
-.highlight .na {
-   color: #6d9cbe;
-}
-
-.highlight .nb {
-   color: #f9f7f3;
-}
-
-.highlight .nc {
-   color: #ffc66d;
-}
-
-.highlight .nd {
-   color: #519f50;
-}
-
-.highlight .ne {
-   color: #da4939;
-}
-
-.highlight .nf {
-   color: #6d9cbe;
-}
-
-.highlight .ni {
-   color: #f9f7f3;
-}
-
-.highlight .nl {
-   color: #f9f7f3;
-}
-
-.highlight .nn {
-   color: #ffc66d;
-}
-
-.highlight .no {
-   color: #da4939;
-}
-
-.highlight .nt {
-   color: #519f50;
-}
-
-.highlight .nv {
-   color: #da4939;
-}
-
-.highlight .nx {
-   color: #6d9cbe;
-}
-
-.highlight .o {
-   color: #519f50;
-}
-
-.highlight .ow {
-   color: #519f50;
-}
-
-.highlight .p {
-   color: #f9f7f3;
-}
-
-.highlight .py {
-   color: #f9f7f3;
-}
-
-.highlight .s {
-   color: #a5c261;
-}
-
-.highlight .s1 {
-   color: #a5c261;
-}
-
-.highlight .s2 {
-   color: #a5c261;
-}
-
-.highlight .sb {
-   color: #a5c261;
-}
-
-.highlight .sc {
-   color: #f9f7f3;
-}
-
-.highlight .sd {
-   color: #5a647e;
-}
-
-.highlight .se {
-   color: #cc7833;
-}
-
-.highlight .sh {
-   color: #a5c261;
-}
-
-.highlight .si {
-   color: #cc7833;
-}
-
-.highlight .sr {
-   color: #a5c261;
-}
-
-.highlight .ss {
-   color: #a5c261;
-}
-
-.highlight .sx {
-   color: #a5c261;
-}
-
-.highlight .vc {
-   color: #da4939;
-}
-
-.highlight .vg {
-   color: #da4939;
-}
-
-.highlight .vi {
-   color: #da4939;
-}
-
-.highlight .w {
-   color: #f9f7f3;
-}
-
-.highlight {
+  background: $color-bg;
   border-radius: 5px;
-  padding: 0.5em 1em;
+  color: $color-fg;
+  margin: 1em 0;
+  padding: 1em;
+
+  & pre {
+    margin: 0;
+  }
+
+  // Comment
+  .c {
+    @include comment;
+  }
+
+  // Comment (Hashbang)
+  .ch {
+    @include comment;
+  }
+
+  // Comment (Multiline)
+  .cm {
+    @include comment;
+  }
+
+  // Comment (Preprocessed)
+  .cp {
+    @include comment;
+  }
+
+  // Comment (Preprocessed File)
+  .cpf {
+    @include comment;
+  }
+
+  // Comment (Single)
+  .c1 {
+    @include comment;
+  }
+
+  // Comment (Special)
+  .cs {
+    @include comment;
+  }
+
+  // Error
+  .err {
+    color: $color-error;
+  }
+
+  // Generic
+  .g {
+  }
+
+  // Generic - Deletion
+  .gd {
+    color: $base00;
+    background: $base08;
+  }
+
+  // Generic - Emphasis
+  .ge {
+    font-style: italic;
+  }
+
+  // Generic - Heading
+  .gh {
+    color: $base0d;
+    font-weight: bold;
+  }
+
+  // Generic - Insertion
+  .gi {
+    color: $base00;
+    background: $base0b;
+  }
+
+  // Generic - Output
+  .go {
+  }
+
+  // Generic - Prompt
+  .gp {
+    color: $base03;
+    font-weight: bold;
+  }
+
+  // Generic - Error
+  .gr {
+  }
+
+  // Generic - Strong
+  .gs {
+    font-weight: bold;
+  }
+
+  // Generic - Subheading
+  .gu {
+    color: $base0d;
+    font-weight: bold;
+  }
+
+  // Generic - Traceback
+  .gt {
+  }
+
+  // Highlight
+  .hll {
+    background-color: $base02;
+  }
+
+  // Keyword
+  .k {
+    @include keyword;
+  }
+
+  // Keyword - Constant
+  .kc {
+    @include keyword;
+  }
+
+  // Keyword - Declaration
+  .kd {
+    @include keyword;
+  }
+
+  // Keyword - Namespace
+  .kn {
+    color: $base0c;
+  }
+
+  // Keyword - Pseudo
+  .kp {
+    color: $color-function;
+  }
+
+  // Keyword - Reserved
+  .kr {
+    @include keyword;
+  }
+
+  // Keyword - Type
+  .kt {
+    color: $base0a;
+  }
+
+  // Literal
+  .l {
+    color: $color-literal;
+  }
+
+  // Literal - Date
+  .ld {
+    color: $color-literal;
+  }
+
+  // Number
+  .m {
+    @include number;
+  }
+
+  // Number - Binary
+  .mb {
+    @include number;
+  }
+
+  // Number - Float
+  .mf {
+    @include number;
+  }
+
+  // Number - Hex
+  .mh {
+    @include number;
+  }
+
+  // Number - Integer
+  .mi {
+    @include number;
+  }
+
+  // Number - Long Integer
+  .il {
+    @include number;
+  }
+
+  // Number - Octal
+  .mo {
+    @include number;
+  }
+
+  // Name
+  .n {
+    color: $color-fg;
+  }
+
+  // Name - Attribute
+  .na {
+    color: $base0d;
+  }
+
+  // Name - Builtin
+  .nb {
+    color: $color-function;
+  }
+
+  // Name - Built-in (Pseudo)
+  .bp {
+    color: $color-fg;
+  }
+
+  // Name - Class
+  .nc {
+    color: $color-class;
+  }
+
+  // Name - Constant
+  .no {
+    color: $base0a;
+  }
+
+  // Name -  Decorator
+  .nd {
+    color: $color-function;
+  }
+
+  // Name - Entity
+  .ni {
+    color: $color-fg;
+  }
+
+  // Name - Exception
+  .ne {
+    color: $color-class;
+  }
+
+  // Name - Function
+  .nf {
+    color: $base0d;
+  }
+
+  // Name - Function (Magic)
+  .fm {
+  }
+
+  // Name - Label
+  .nl {
+    color: $color-fg;
+  }
+
+  // Name - Namespace
+  .nn {
+    color: $base0a;
+  }
+
+  // Name - Other
+  .nx {
+    color: $base0d;
+  }
+
+  // Name - Property
+  .py {
+    color: $base07;
+  }
+
+  // Name - Tag
+  .nt {
+    color: $base09;
+  }
+
+  // Name - Variable
+  .nv {
+    color: $color-variable;
+  }
+
+  // Name - Variable (Class)
+  .vc {
+    color: $color-variable;
+  }
+
+  // Name - Variable (Global)
+  .vg {
+    color: $color-variable;
+  }
+
+  // Name - Variable (Instance)
+  .vi {
+    color: $color-variable;
+  }
+
+  // Name - Variable (Magic)
+  .vm {
+    color: $color-variable;
+  }
+
+  // Operator
+  .o {
+    color: $color-fg;
+  }
+
+  // Operator - Word
+  .ow {
+    color: $color-fg;
+  }
+
+  // Punctuation
+  .p {
+    color: $color-fg;
+  }
+
+  // String
+  .s {
+    @include string;
+  }
+
+  // String - Single
+  .s1 {
+    @include string;
+  }
+
+  // String - Double
+  .s2 {
+    @include string;
+  }
+
+  // String - Backtick
+  .sb {
+    @include string;
+  }
+
+  // String - Char
+  .sc {
+    @include string;
+  }
+
+  // String - Delimeter
+  .dl {
+  }
+
+  // String - Doc
+  .sd {
+    @include string;
+  }
+
+  // String - Escape
+  .se {
+    color: $base0f;
+  }
+
+  // String - Heredoc
+  .sh {
+    @include string;
+  }
+
+  // String - Interpolation
+  .si {
+    color: $base0f;
+  }
+
+  // String - Other
+  .sx {
+    @include string;
+  }
+
+  // String - Regex
+  .sr {
+    color: $base0c;
+  }
+
+  // String - Symbol
+  .ss {
+    @include string;
+  }
+
+  // Whitespace
+  .w {
+    color: $color-fg;
+  }
 }
