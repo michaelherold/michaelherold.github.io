@@ -1,0 +1,8 @@
+.site {
+  display: flex;
+  flex-flow: column;
+
+  @media (min-width: $two-column-width) {
+    flex-flow: row-reverse nowrap;
+  }
+}
