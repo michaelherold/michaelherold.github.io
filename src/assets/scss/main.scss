@@ -2,7 +2,10 @@
 
 @import "normalize";
 @import "bourbon/bourbon";
+
 @import "functions";
+@import "mixins";
+
 @import "base/base";
 
 @import "components/archive";
@@ -16,3 +19,5 @@
 @import "components/site-content";
 @import "components/site-header";
 @import "components/site-navigation";
+
+@import "components/fonts";

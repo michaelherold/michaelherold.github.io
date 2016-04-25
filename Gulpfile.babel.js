@@ -154,7 +154,8 @@ gulp.task('rebuild', gulp.series(
 gulp.task('scripts', () =>
   gulp.src([
     'src/assets/javascript/vendor.js',
-    'src/assets/javascript/main.js'
+    'src/assets/javascript/main.js',
+    'src/assets/javascript/fonts.js',
   ])
     .pipe($.newer('.tmp/assets/javascript/index.js', {dest: '.tmp/assets/javascript', ext: '.js'}))
     .pipe($.if(!argv.prod, $.sourcemaps.init()))
