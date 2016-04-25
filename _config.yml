@@ -71,17 +71,14 @@ gems:
 
 jekyll-archives:
   enabled:
-    - year
-    - month
     - categories
-    - tags
+    - month
+    - year
   layouts:
-    year: "year-archive"
-    month: "month-archive"
-    category: "category-archive"
-    tag: "tag-archive"
+    category: "archives"
+    month: "archives"
+    year: "archives"
   permalinks:
-    year: "/archive/:year/"
-    month: "/archive/:year/:month/"
     category: "/category/:name/"
-    tags: "/tag/:name/"
+    month: "/archives/:year/:month/"
+    year: "/archives/:year/"
