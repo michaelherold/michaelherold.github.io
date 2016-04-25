@@ -4,11 +4,30 @@ layout: default
 
 <ol class="post-list">
   {% for post in site.posts %}
-    <li>
-      <h2>
-        <a class="post-list-post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <li class="mini-post">
+      <h2 class="mini-post-title">
+        <a class="mini-post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
-      <span class="post-list-post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <ul class="mini-post-meta">
+        <li class="mini-post-meta-datum">
+          <time class="mini-post-meta-date">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </li>
+        <li class="mini-post-meta-datum">
+          <span class="mini-post-meta-reading-time" title="{{ post.content | split: " " | size }} words">{{ post.content | reading_time }}</span>
+        </li>
+        <li class="mini-post-meta-datum">
+          <ul class="mini-post-meta-categories">
+            {% for category in post.categories %}
+              <li class="mini-post-meta-categories-category">
+                <a href="{{ category | prepend: "/category/" + site.baseurl }}">{{ category }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+      <p class="mini-post-abstract">
+        {{ post.excerpt | remove: "<p>" | remove: "</p>" }}
+      </p>
     </li>
   {% endfor %}
 </ol>
