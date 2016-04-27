@@ -25,9 +25,9 @@ layout: default
           </ul>
         </li>
       </ul>
-      <p class="mini-post-abstract">
-        {{ post.excerpt | remove: "<p>" | remove: "</p>" }}
-      </p>
+      <div class="mini-post-abstract">
+        {{ post.content | split: "<!-- more -->" | first }}
+      </div>
     </li>
   {% endfor %}
 </ol>
