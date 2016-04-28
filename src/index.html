@@ -16,10 +16,10 @@ layout: default
           <span class="mini-post-meta-reading-time" title="{{ post.content | split: " " | size }} words">{{ post.content | reading_time }}</span>
         </li>
         <li class="mini-post-meta-datum">
-          <ul class="mini-post-meta-categories">
-            {% for category in post.categories %}
-              <li class="mini-post-meta-categories-category">
-                <a href="{{ category | prepend: "/category/" + site.baseurl }}">{{ category }}</a>
+          <ul class="mini-post-meta-tags">
+            {% for tag in post.tags %}
+              <li class="mini-post-meta-tags-tag">
+                <a href="{{ tag | slugify | prepend: "/tags/" + site.baseurl }}">{{ tag }}</a>
               </li>
             {% endfor %}
           </ul>

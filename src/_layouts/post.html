@@ -22,10 +22,10 @@ layout: default
         <span class="post-header-meta-reading-time" title="{{ content | split: " " | size }} words">{{ content | reading_time }}</span>
       </li>
       <li class="post-header-meta-datum">
-        <ul class="post-header-meta-categories">
-          {% for category in page.categories %}
-            <li class="post-header-meta-categories-category">
-              <a href="{{ category | prepend: "/category/" + site.baseurl }}">{{ category }}</a>
+        <ul class="post-header-meta-tags">
+          {% for tag in page.tags %}
+            <li class="post-header-meta-tags-tag">
+              <a href="{{ tag | slugify | prepend: "/tags/" + site.baseurl }}">{{ tag }}</a>
             </li>
           {% endfor %}
         </ul>
