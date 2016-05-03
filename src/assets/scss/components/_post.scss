@@ -6,6 +6,20 @@
     font-size: modular-scale(1);
     margin: 0;
     text-align: justify;
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: modular-lighten($brand-text, 1);
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: square inside none;
+      margin: 0 0 0.75em;
+    }
   }
 
   &-header {

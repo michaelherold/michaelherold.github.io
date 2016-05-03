@@ -51,8 +51,9 @@ $color-variable: $base08;
   margin: 1em 0;
   padding: 1em;
 
-  & pre {
+  pre {
     margin: 0;
+    overflow-x: auto;
   }
 
   // Comment
