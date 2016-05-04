@@ -16,6 +16,11 @@ gulp.task('assets:copy', () =>
     .pipe(gulp.dest('dist/assets'))
 );
 
+gulp.task('cname', () =>
+  gulp.src('CNAME')
+    .pipe(gulp.dest('dist'))
+);
+
 gulp.task('clean:assets', () => {
   return del([
     '.tmp/**/*',
@@ -47,7 +52,10 @@ gulp.task('clean:metadata', () => {
 
 gulp.task('deploy', () => {
   return gulp.src('dist/**/*')
-    .pipe($.ghPages());
+    .pipe($.ghPages({
+      branch: 'master',
+      origin: 'origin',
+    }));
 });
 
 gulp.task('fonts', () =>
@@ -241,7 +249,7 @@ gulp.task('assets', gulp.series(
 gulp.task('build', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
   gulp.series('assets', 'inject:head', 'inject:footer', 'inject:svgs'),
-  gulp.series('jekyll', 'assets:copy', 'html')
+  gulp.series('jekyll', 'assets:copy', 'html', 'cname')
 ));
 
 gulp.task('default', gulp.series(
