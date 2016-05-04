@@ -1,4 +1,5 @@
 ---
+date: 2016-05-04 07:27:00 -0500
 layout: post
 title: Creating a subset font
 tags:
