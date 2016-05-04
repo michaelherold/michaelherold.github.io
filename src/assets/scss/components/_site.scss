@@ -1,0 +1,23 @@
+.site {
+  display: flex;
+  flex-flow: column;
+  @include webfont;
+
+  @media (min-width: $two-column-width) {
+    flex-flow: row-reverse nowrap;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  strong {
+    @include webfont-bold;
+  }
+
+  em,
+  i {
+    @include webfont-italic;
+  }
+}

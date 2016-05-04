@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  {% include head.html %}
+  <body class="site">
+    <header class="site-header">
+      <a class="site-header-title" href="{{ site.baseurl }}/">
+        <svg class="site-header-logo"><use xlink:href="#icon-logo" /></svg>
+        <h1 class="site-header-title-text">{{ site.title }}</h1>
+      </a>
+      <aside>
+        <nav class="site-navigation" role="navigation">
+          <ul class="site-navigation-pages">
+            {% for page in site.pages %}
+              {% if page.title %}
+                <li class="site-navigation-pages-item"><a class="site-navigation-pages-item-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          <ul class="site-navigation-social">
+            {% for social in site.social_links %}
+              <li class="site-navigation-social-item">
+                <a class="site-navigation-social-item-link" href="{{ social[1].url }}">
+                  <svg class="icon"><use xlink:href="#icon-{{ social[0] }}" /></svg>
+                    <span class="site-navigation-social-item-link-text">{{ social[1].username }} on {{ social[0] | capitalize }}</span>
+                </a>
+              </li>
+            {% endfor %}
+            <li class="site-navigation-social-item">
+              <a class="site-navigation-social-item-link icon-feed" href="/feed.xml">
+                <svg class="icon"><use xlink:href="#icon-feed" /></svg>
+                <span class="site-navigation-social-item-link-text">{{ site.title }} RSS Feed</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </header>
+    <main class="site-content">
+      {{ content }}
+      {% include icons.html %}
+    </main>
+
+    <!-- JS -->
+    <!-- inject:js -->
+    <script src="/assets/javascript/index.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

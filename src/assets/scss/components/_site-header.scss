@@ -1,0 +1,54 @@
+.site-header {
+  margin-top: 5em;
+  text-align: center;
+
+  @media (min-width: $two-column-width) {
+    margin-top: 0;
+    text-align: right;
+  }
+
+  &-logo {
+    display: inline-block;
+    height: 80px;
+    fill: $brand-primary;
+    width: 80px;
+  }
+
+  &-title {
+    display: inline-block;
+    outline: none;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media (min-width: $two-column-width) {
+      text-align: right;
+    }
+
+    &-text {
+      color: #161614;
+      display: inline-block;
+      font-size: modular-scale(2);
+      line-height: 80px;
+      margin: 0 0 0 10px;
+      opacity: 0.3;
+      padding: 0;
+      vertical-align: top;
+
+      @media (min-width: $two-column-width) {
+        display: block;
+        line-height: inherit;
+        margin-top: 0.25em;
+        text-align: right;
+        width: 6em;
+      }
+    }
+  }
+
+  @media (min-width: $two-column-width) {
+    $site-header-padding: $sidebar-width / 4;
+    flex-basis: $sidebar-width;
+    padding: $site-header-padding $site-header-padding 0 0;
+  }
+}
+

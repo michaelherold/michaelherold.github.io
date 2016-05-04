@@ -1,0 +1,61 @@
+.mini-post {
+  padding: 1em;
+
+  &-abstract {
+    color: $brand-text;
+    font-size: modular-scale(1);
+    margin: 0;
+    text-align: justify;
+  }
+
+  &-meta {
+    color: modular-lighten($brand-text, 1);
+    margin-bottom: modular-scale(-1);
+
+    &-datum {
+      display: inline-block;
+
+      &:not(:first-child) {
+        margin-left: modular-scale(-4);
+
+        &:before {
+          content: "\2022";
+          margin-right: modular-scale(-4);
+        }
+      }
+    }
+
+    &-tags {
+      display: inline-block;
+
+      &-tag {
+        display: inline-block;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+          &:after {
+            content: ",";
+            margin-left: modular-scale(-10) * -1;
+          }
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: modular-scale(2);
+    @include margin(0 0 modular-scale(-4) 0);
+  }
+
+  &-link {
+    color: modular-lighten($brand-text, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: box-shadow $base-duration $base-timing;
+
+    &:hover {
+      box-shadow: 0 1px 0 0 modular-lighten($brand-text, 1);
+      color: modular-lighten($brand-text, 1);
+    }
+  }
+}

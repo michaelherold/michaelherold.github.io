@@ -1,0 +1,7 @@
+.publish/
+.sass-cache
+.tmp
+dist/
+node_modules/
+src/.jekyll-metadata
+Gemfile.lock
