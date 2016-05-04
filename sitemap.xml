@@ -1,23 +1,13 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-    <url>
-        <loc>http://mherold.org/2013/11/04/welcome-to-my-new-blog/</loc>
-        <lastmod>2013-11-04T16:30:07-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mherold.org/2013/11/06/what-is-software-craftsmanship/</loc>
-        <lastmod>2013-11-06T17:42:51-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mherold.org/archives/</loc>
-        <lastmod>2013-11-06T17:42:51-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mherold.org/</loc>
-        <lastmod>2013-11-06T17:42:51-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://mherold.org/robots.txt</loc>
-        <lastmod>2013-11-04T15:43:35-05:00</lastmod>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://michaeljherold.com/2016/05/04/creating-a-subset-font.html</loc>
+<lastmod>2016-05-04T07:27:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://michaeljherold.com/about/</loc>
+</url>
+<url>
+<loc>https://michaeljherold.com/</loc>
+</url>
 </urlset>
