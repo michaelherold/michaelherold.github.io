@@ -28,6 +28,9 @@ layout: default
       <div class="mini-post-abstract">
         {{ post.content | expanded_excerpt }}
       </div>
+      <div class="mini-post-footer">
+        <a class="mini-post-continue" href="{{ post.url | prepend: site.baseurl }}">Continue reading&hellip;</a>
+      </div>
     </li>
   {% endfor %}
 </ol>
