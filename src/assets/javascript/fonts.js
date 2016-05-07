@@ -23,10 +23,10 @@
           NotoSansItalic: {
             style: 'italic',
           },
-          NotoSansBoldItalic: {
-            weight: 700,
-            style: 'italic',
-          },
+          // NotoSansBoldItalic: {
+          //   weight: 700,
+          //   style: 'italic',
+          // },
         };
         var numberOfFonts = Object.keys(stage2).length;
 
