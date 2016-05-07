@@ -16,11 +16,6 @@ gulp.task('assets:copy', () =>
     .pipe(gulp.dest('dist/assets'))
 );
 
-gulp.task('cname', () =>
-  gulp.src('CNAME')
-    .pipe(gulp.dest('dist'))
-);
-
 gulp.task('clean:assets', () => {
   return del([
     '.tmp/**/*',
@@ -249,7 +244,7 @@ gulp.task('assets', gulp.series(
 gulp.task('build', gulp.series(
   gulp.series('clean:assets', 'clean:gzip'),
   gulp.series('assets', 'inject:head', 'inject:footer', 'inject:svgs'),
-  gulp.series('jekyll', 'assets:copy', 'html', 'cname')
+  gulp.series('jekyll', 'assets:copy', 'html')
 ));
 
 gulp.task('default', gulp.series(
