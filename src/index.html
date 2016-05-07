@@ -26,7 +26,7 @@ layout: default
         </li>
       </ul>
       <div class="mini-post-abstract">
-        {{ post.content | split: "<!-- more -->" | first }}
+        {{ post.content | expanded_excerpt }}
       </div>
     </li>
   {% endfor %}

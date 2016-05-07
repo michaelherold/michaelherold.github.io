@@ -33,6 +33,6 @@ layout: default
     </ul>
   </header>
   <div class="post-content" itemprop="articleBody">
-    {{ content | split: '<!-- more -->' | last }}
+    {{ content | without_excerpt }}
   </div>
 </article>
