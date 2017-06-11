@@ -1,6 +1,11 @@
 .site {
+  bottom: 0;
   display: flex;
   flex-flow: column;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
   @include webfont;
 
   @media (min-width: $two-column-width) {
