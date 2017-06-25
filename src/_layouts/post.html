@@ -25,7 +25,7 @@ layout: default
         <ul class="post-header-meta-tags">
           {% for tag in page.tags %}
             <li class="post-header-meta-tags-tag">
-              <a href="{{ tag | slugify | prepend: "/tags/" + site.baseurl }}">{{ tag }}</a>
+              <a href="{{ tag | slugify | prepend: site.base_url | prepend: "/tags/" }}">{{ tag }}</a>
             </li>
           {% endfor %}
         </ul>

@@ -20,7 +20,7 @@ layout: default
             <ul class="mini-post-meta-categories">
               {% for category in post.categories %}
                 <li class="mini-post-meta-categories-category">
-                  <a href="{{ category | prepend: "/category/" + site.baseurl }}">{{ category }}</a>
+                  <a href="{{ category | prepend: site.baseurl | prepend: "/category/" }}">{{ category }}</a>
                 </li>
               {% endfor %}
             </ul>
