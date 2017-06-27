@@ -42,7 +42,10 @@
 
     <!-- JS -->
     <!-- inject:js -->
-    <script src="/assets/javascript/index.js"></script>
+    <script src="/assets/javascript/index-db818a8e80.min.js"></script>
     <!-- endinject -->
+    {% if jekyll.environment == "production" %}
+    {% include analytics.html %}
+    {% endif %}
   </body>
 </html>

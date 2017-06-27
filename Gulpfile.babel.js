@@ -126,7 +126,7 @@ gulp.task('jekyll', done => {
     shell.exec('bundle exec jekyll build');
     done();
   } else if (argv.prod) {
-    shell.exec('bundle exec jekyll build --config _config.yml,_config.prod.yml');
+    shell.exec('JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config.prod.yml');
     done();
   }
 });
